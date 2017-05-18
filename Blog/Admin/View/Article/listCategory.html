@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>管理分类</title>
+        <link rel="stylesheet" href="__PUBLIC__/Css/Admin/table.css">
+        <link rel="stylesheet" href="__PUBLIC__/Css/Admin/listCategory.css">
+    </head>
+    <body>
+        <div class="add-category">
+            <input type="text" placeholder="分类名" id="cate_name"><input type="submit" value="添加分类" onclick="ajaxAddCate()">
+            <br>
+            <span id="message"></span>
+        </div>
+        <table cellspacing="0">
+            <caption><h2>文章分类</h2></caption>
+            <tr>
+                <td>分类</td>
+                <td>文章数</td>
+                <td>操作</td>
+            </tr>
+
+            <volist name="cate_list" id="cate">
+                <tr>
+                    <td>{$cate.cate_name}</td>
+                    <td>{$cate.article|count}</td>
+                    <td><a href="">查看具体文章(开发ing)</a> / <a href="javascript:;" onclick="ajaxUpdateCate({$cate.cate_id})">编辑</a> / <a href="javascript:;" onclick="ajaxDelCate({$cate.cate_id})">删除</a></td>
+                </tr>
+            </volist>
+            <tr>
+                <td>[未分类]</td>
+                <td>{$uncate[0]["count"]}</td>
+                <td><a href="">查看具体文章(开发ing)</a></td>
+            </tr>
+        </table>
+        <div class="div-page">
+            {$div_page}
+        </div>
+
+    </body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/Js/Admin/listCategory.js"></script>

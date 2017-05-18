@@ -1,0 +1,47 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>登录</title>
+        <link rel="stylesheet" href="/blog/Public/Css/login_register.css">
+    </head>
+    <body>
+        <div class="form">
+            <h1>登　录</h1>
+            <input type="text" class="input username" placeholder="用户名" id="username">
+            <input type="password" class="input password" placeholder="密码" id="password">
+            <div class="remeber_me">
+                <input type="checkbox" id="remember_checkbox" style="zoom:160%;"><label for="remember_checkbox">记住一个星期</label>
+            </div>
+            <span id="message"></span><input type="submit" value="登　录" id="submit_btn">
+            <div class="br"><hr></div>
+            <a href="/blog/index.php/Home/Account/register">没有帐号? 去注册一个</a><a href="/blog/index.php/Home" style="float:right">[返回首页]</a>
+        </div>
+    </body>
+</html>
+<script type="text/javascript">
+document.getElementById("submit_btn").onclick = function() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var remember = document.getElementById("remember_checkbox").checked;
+    var data = "username=" + username + "&password=" + password + "&remember=" + remember;
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/blog/index.php/Home/Account/loginAction", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)) {
+            var response = JSON.parse(xhr.responseText);
+            if (response.flag) {
+                document.write(response.message + ",3秒之后跳转到主页。" + "<a href='/blog/index.php/Home'>[立即跳转]</a>");
+                setTimeout(function(){
+                    location.href = '/blog/index.php/Home';
+                }, 3000);
+            } else {
+                document.getElementById("message").innerHTML = response.message;
+            }
+        }
+    }
+}
+</script>

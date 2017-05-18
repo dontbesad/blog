@@ -1,0 +1,19 @@
+#return_top_btn {
+    text-align: center;
+    position: fixed;
+    right: 1%;
+    bottom: 3%;
+    height: 40px;
+    width: 40px;
+    background-image: url(/blog/Public/Images/Icons/top_bg.png);
+    transition: all 0.3s;
+}
+#return_top_btn:hover {
+    background-position: 0 100%;
+}
+.none {
+    display: none;
+}
+.show {
+    display: block;
+}

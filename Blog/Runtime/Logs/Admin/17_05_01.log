@@ -1,0 +1,51 @@
+[ 2017-05-01T00:37:41+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article
+ERR: syntax error, unexpected '$art' (T_VARIABLE)
+
+[ 2017-05-01T00:37:52+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article
+ERR: syntax error, unexpected '$art' (T_VARIABLE)
+
+[ 2017-05-01T00:55:49+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected ')'
+
+[ 2017-05-01T00:55:58+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected ')'
+
+[ 2017-05-01T01:01:54+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:02:09+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:02:10+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:02:10+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:03:35+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:03:42+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:03:43+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:03:49+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected '<', expecting variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-05-01T01:05:07+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/article/opt/update/artid/1
+ERR: syntax error, unexpected 'else' (T_ELSE)
+
+[ 2017-05-01T01:45:49+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/updateArt
+ERR: 1048:Column 'art_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `art_cate` (`art_id`,`cate_id`) VALUES (NULL,'7')
+
+[ 2017-05-01T01:46:19+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/updateArt
+ERR: 1048:Column 'art_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `art_cate` (`art_id`,`cate_id`) VALUES (NULL,'7')
+
+[ 2017-05-01T01:46:25+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/updateArt
+ERR: 1048:Column 'art_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `art_cate` (`art_id`,`cate_id`) VALUES (NULL,'7')
+

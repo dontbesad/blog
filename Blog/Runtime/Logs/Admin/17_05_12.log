@@ -1,0 +1,21 @@
+[ 2017-05-12T12:23:20+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userList
+ERR: syntax error, unexpected '}', expecting ')'
+
+[ 2017-05-12T12:24:39+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userList
+ERR: syntax error, unexpected ';', expecting ',' or ')'
+
+[ 2017-05-12T12:33:49+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userEdit
+ERR: syntax error, unexpected '"password"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+
+[ 2017-05-12T18:31:17+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userList
+ERR: syntax error, unexpected '}'
+
+[ 2017-05-12T18:31:21+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userList
+ERR: syntax error, unexpected '}'
+
+[ 2017-05-12T18:31:27+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userList
+ERR: syntax error, unexpected '}'
+
+[ 2017-05-12T20:53:27+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userList
+ERR: syntax error, unexpected '}'
+

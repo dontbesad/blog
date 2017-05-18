@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>修改</title>
+        <link rel="stylesheet" href="__PUBLIC__/Css/Admin/article.css">
+    </head>
+    <body>
+        <div class="add-art">
+                <label for="title"><i>标 题</i></label>
+                <input type="text" class="art-title" id="title" value="{$art.title}">
+                <label for="editor"><i>内 容</i></label>
+                <textarea id="editor">{$art.content}</textarea>
+                <hr>
+                <dl>
+                    <dt><i>分 类</i></dt>
+                    <dd>
+                        <volist name="cate_list" id="cate">
+                            <label for="cate{$cate.cate_id}">{$cate.cate_name}</label><input type="checkbox" name="{$cate.cate_id}" id="cate{$cate.cate_id}" class="checkbox-cate" <present name='cate.checked'>checked</present> >
+                        </volist>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><i>标 签</i></dt>
+                    <dd id="tag_list">
+                        <volist name="tag_list" id="tag">
+                            <label for="tag{$tag.tag_id}">{$tag.tag_name}</label><input type="checkbox" name="{$tag.tag_id}" id="tag{$tag.tag_id}" class="checkbox-tag" <present name='tag.checked'>checked</present> >
+                        </volist>
+                    </dd>
+
+                </dl>
+                <div class="add-tag">
+                    <input type="text" placeholder="添加标签" id="tag_name"><input type="submit" value="添加标签" id="add_tag"><span id="message_tag"></span>
+                </div>
+                <hr>
+                <input type="submit" class="add-art-btn" value="文章添加" onclick="editArt('{$Think.get.opt}','{$Think.get.artid}')"><span id="message_art"></span>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/Js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/Admin/article.js"></script>

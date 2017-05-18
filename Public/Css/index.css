@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+body,ul,h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family:Arial,Verdana,Sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.hidden {
+    display: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 首部固定部分 */
+.header {
+    height: 50px;
+    width: 90%;
+    line-height: 50px;
+    padding: 0 5%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(244, 245, 246);
+    border-bottom: 1px solid #ddd;
+}
+.header h1 {
+    float:left;
+    margin-right: 10px;
+    font-size: 22px;
+    color: #555;
+}
+.header h1 a {
+    color: #555;
+}
+.header i {
+    color: #888;
+}
+.header>ul {
+    float: right;
+}
+.header>ul>li {
+    float: left;
+}
+.header>ul>li>a {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    color: #666;
+    transition: all .5s;
+}
+.header>ul>li>ul {
+    display: none;
+}
+.header>ul>li:hover >ul {
+    display: block;
+}
+.header>ul>li>a:hover {
+    background-color: #ddd;
+}
+/* 二级菜单 */
+.header>ul>li>ul>li>a{
+    text-align: center;
+    background-color: rgba(251,253,255,.8);
+    color: #66f;
+    height: 30px;
+    line-height: 30px;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    display: block;
+}
+.header>ul>li>ul>li>a:hover {
+    color: #55c;
+    background-color: rgba(230,232,234,1);
+}
+.br {
+    height: calc(51px + 10px);
+}
+.br2 {
+    height: 30px;
+}
+
+/* 主体部分 */
+.main {
+    width: 90%;
+    padding: 0 5%;
+    overflow: hidden;
+}
+.main .left-area {
+    float: left;
+    width: 70%;
+}
+.main .right-area {
+    float: right;
+    width: 28%;
+}
+/* 左边 */
+.left-area .article-list {
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #bbb;
+}
+.article-list h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.article-list h2 a {
+    color: #000;
+}
+.article-list h2 a:hover {
+    color: #555;
+}
+.article-list .preview-art a {
+    color: #28a;
+    font-weight: bolder;
+}
+.article-list .preview-art a:hover {
+    color: #145;
+    text-decoration: underline;
+}
+.article-list h4 {
+    font-size: 15px;
+    color: #333;
+}
+.article-list h4 a {
+    margin: 0 2px;
+    color: #393;
+}
+.div-page {
+    text-align: center;
+}
+.div-page a, .div-page span {
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    margin: 5px 3px;
+    border: 1px solid #ccc;
+    color: rgb(115, 76, 38);
+}
+.div-page span {
+    color: #555;
+    background-color: #eee;
+    cursor: not-allowed;
+}
+.div-page a:hover {
+    background-color: #ddd;
+}
+
+/* 右边 */
+.right-area .area {
+    border: 1px solid #bbb;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 1px #999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.right-area .area .area-title {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ddd;
+    color: #555;
+    text-indent: 10px;
+}
+.right-area .area .area-content {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.area-content ul li a {
+    color: #38c;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    line-height: 24px;
+    border-left: 5px solid #955;
+    background-color: #cde;
+    text-indent: 10px;
+}
+.area-content ul li a:hover {
+    color: #138;
+    background-color: #ccd;
+}
+
+.area-content .area-tag {
+    display: inline-block;
+    padding: 2px;
+}
+.area-tag a {
+    display: block;
+    padding: 1px 4px;
+    background-color: #50b7c1;
+    color: #fff;
+}
+.area-tag a:hover {
+    background-color: rgb(104, 167, 213);
+    color: #eee;
+}
+
+/* 页尾 */
+.footer {
+    background-color: #eee;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+    color: #666;
+}
+.footer .friend-link {
+    margin: 0 auto;
+    width: 60%;
+}
+.footer .friend-link a {
+    color: rgb(49, 110, 181);
+    margin-right: 5px;
+}
+.footer .friend-link a:hover {
+    text-decoration: underline;
+}
+.footer .friend-link a:nth-child(odd) {
+    color: rgb(80, 120, 120);
+}
+.footer .friend-link a:nth-child(even) {
+    color: rgb(110, 180, 180);
+}
+
+@media screen and (max-width: 700px) {
+    .main .left-area {
+        width: 100%;
+    }
+    .main .right-area {
+        width: 100%;
+        float: none;
+    }
+}

@@ -1,0 +1,58 @@
+[ 2017-05-14T10:10:50+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/aboutme
+ERR: 非法操作:aboutme
+
+[ 2017-05-14T10:10:53+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/aboutme
+ERR: 非法操作:aboutme
+
+[ 2017-05-14T10:11:09+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/aboutme
+ERR: 非法操作:aboutme
+
+[ 2017-05-14T10:11:12+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/search
+ERR: 非法操作:search
+
+[ 2017-05-14T10:11:18+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/search
+ERR: 非法操作:search
+
+[ 2017-05-14T10:11:20+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/aboutme
+ERR: 非法操作:aboutme
+
+[ 2017-05-14T10:11:27+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/category/cateid/1
+ERR: 非法操作:category
+
+[ 2017-05-14T10:13:58+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/Home.html
+ERR: 非法操作:Home
+
+[ 2017-05-14T10:14:18+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/Home.html
+ERR: 非法操作:Home
+
+[ 2017-05-14T10:16:51+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/category/cateid/15
+ERR: 非法操作:category
+
+[ 2017-05-14T10:17:11+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/category/cateid/7
+ERR: 非法操作:category
+
+[ 2017-05-14T10:59:49+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/index.html?tagid=9
+ERR: Undefined class constant 'self::MANY_TO_MANY'
+
+[ 2017-05-14T11:29:11+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/index.html?tagid=1
+ERR: 1054:Unknown column 'art_id' in 'IN/ALL/ANY subquery'
+ [ SQL语句 ] : SELECT * FROM `tag` WHERE ( art_id in ( SELECT `art_id` FROM `art_tag` WHERE `tag_id` = 1  ) ) LIMIT 0,8  
+
+[ 2017-05-14T14:07:48+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/article/artid/6
+ERR: 非法操作:article
+
+[ 2017-05-14T14:07:52+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/article/artid/6
+ERR: 非法操作:article
+
+[ 2017-05-14T14:07:54+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/article/artid/6
+ERR: 非法操作:article
+
+[ 2017-05-14T14:08:36+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/article/artid/6
+ERR: 非法操作:article
+
+[ 2017-05-14T14:08:45+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/article/artid/5
+ERR: 非法操作:article
+
+[ 2017-05-14T14:09:21+08:00 ] 127.0.0.1 /blog/index.php/Home/Tag/article/artid/5
+ERR: 非法操作:article
+

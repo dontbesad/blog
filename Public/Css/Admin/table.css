@@ -1,0 +1,66 @@
+/* 通用后台table样式 */
+body {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+input {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+}
+html {
+    font-family:Arial,Verdana,Sans-serif;
+}
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+tr {
+    color: #333;
+    font-size: 13px;
+}
+td {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+td a:hover {
+    color: #355;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+tr:hover {
+    background-color: #ddd;
+}
+.div-page {
+    margin: 10px auto;
+    text-align: center;
+}
+.div-page a, .div-page span {
+    padding: 4px 12px;
+    font-size: 13px;
+    background-color: #6495ED;
+    color:#eee;
+    margin: 0 5px;
+}
+.div-page a:hover {
+    cursor: pointer;
+    background-color: #4682B4;
+    color: #fff;
+}
+.div-page span {
+    background-color: #4580B9;
+    color: #ccc;
+    cursor: not-allowed;
+}

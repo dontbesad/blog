@@ -1,0 +1,61 @@
+[ 2017-04-27T15:32:07+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/test
+ERR: 1146:Table 'blog.Art_cate' doesn't exist
+ [ SQL语句 ] : SELECT b.* FROM Art_cate AS a, category AS b WHERE a.cate_id = b.cate_id AND a. art_id='1'
+
+[ 2017-04-27T15:32:07+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/test
+ERR: 1146:Table 'blog.Art_cate' doesn't exist
+ [ SQL语句 ] : SELECT b.* FROM Art_cate AS a, category AS b WHERE a.cate_id = b.cate_id AND a. art_id='1'
+
+[ 2017-04-27T15:32:07+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/test
+ERR: 1146:Table 'blog.Art_cate' doesn't exist
+ [ SQL语句 ] : SELECT b.* FROM Art_cate AS a, category AS b WHERE a.cate_id = b.cate_id AND a. art_id='1'
+
+[ 2017-04-27T15:32:46+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/test
+ERR: syntax error, unexpected 'echo' (T_ECHO), expecting ')'
+
+[ 2017-04-27T17:05:57+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: syntax error, unexpected '}'
+
+[ 2017-04-27T20:13:53+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: syntax error, unexpected ')'
+
+[ 2017-04-27T20:23:09+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1054:Unknown column 'cate_id' in 'field list'
+ [ SQL语句 ] : INSERT INTO `article` (`title`,`content`,`cate_id`) VALUES ('123123','&lt;p&gt;123123123&lt;/p&gt;','2')
+
+[ 2017-04-27T20:26:35+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1054:Unknown column 'cate_id' in 'field list'
+ [ SQL语句 ] : INSERT INTO `article` (`title`,`content`,`cate_id`) VALUES ('asd','&lt;p&gt;asd&lt;/p&gt;','2')
+
+[ 2017-04-27T20:28:58+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1054:Unknown column 'cate_id' in 'field list'
+ [ SQL语句 ] : INSERT INTO `article` (`title`,`content`,`cate_id`) VALUES ('asd','&lt;p&gt;asd&lt;/p&gt;','2')
+
+[ 2017-04-27T20:30:20+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1054:Unknown column 'cate_id' in 'field list'
+ [ SQL语句 ] : INSERT INTO `article` (`title`,`content`,`cate_id`) VALUES ('asd','&lt;p&gt;asd&lt;/p&gt;','2')
+
+[ 2017-04-27T20:35:38+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1054:Unknown column 'cate_id' in 'field list'
+ [ SQL语句 ] : INSERT INTO `article` (`title`,`content`,`cate_id`) VALUES ('asd','&lt;p&gt;asd&lt;/p&gt;','2')
+
+[ 2017-04-27T20:36:05+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1054:Unknown column 'cate_id' in 'field list'
+ [ SQL语句 ] : INSERT INTO `article` (`title`,`content`,`cate_id`) VALUES ('asd','&lt;p&gt;asd&lt;/p&gt;','1')
+
+[ 2017-04-27T20:36:58+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1054:Unknown column 'cate_id' in 'field list'
+ [ SQL语句 ] : INSERT INTO `article` (`title`,`content`,`cate_id`) VALUES ('asd','&lt;p&gt;asd&lt;/p&gt;','1')
+
+[ 2017-04-27T21:39:16+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: Function name must be a string
+
+[ 2017-04-27T23:49:24+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: Call to undefined function Admin\Controller\emtpy()
+
+[ 2017-04-27T23:53:25+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: Call to undefined function Admin\Controller\emtpy()
+
+[ 2017-04-27T23:54:14+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: Call to undefined function Admin\Controller\emtpy()
+

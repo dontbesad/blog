@@ -1,0 +1,25 @@
+</div>
+<div class="right-area">
+    <div class="area" id="category">
+        <div class="area-title">分类</div>
+        <div class="area-content">
+            <ul>
+                <volist name="cate_list" id="cate">
+                    <li><a href="{:U('Home/Index/category')}?cateid={$cate.cate_id}">{$cate.cate_name}</a></li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <div class="area" id="tag">
+        <div class="area-title">标签</div>
+        <div class="area-content">
+            <volist name="tag_list" id="tag">
+                <div class="area-tag"><a href="{:U('Home/Tag/index')}?tagid={$tag.tag_id}">{$tag.tag_name}</a></div>
+            </volist>
+        </div>
+    </div>
+    <!--div class="area" id="comment">
+        <div class="area-title">评论最多</div>
+        <div class="area-content"></div>
+    </div-->
+</div>

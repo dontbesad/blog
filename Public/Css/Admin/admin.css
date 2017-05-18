@@ -1,0 +1,121 @@
+@charset "UTF-8";
+body,h1,h2,h3,h4,ul,iframe{
+    padding: 0;
+    margin: 0;
+}
+iframe {
+    box-sizing: border-box;
+    padding: 5px;
+}
+html {
+    font-family:Arial,Verdana,Sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #263238;
+}
+
+.header {
+    padding: 0 1%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.header h1 {
+    float: left;
+    display: inline-block;
+}
+.header h1 a {
+    color: #eee;
+}
+.header h2 {
+    display: inline-block;
+    font-weight: lighter;
+    color: #987;
+}
+.header ul {
+    float: right;
+}
+.header ul li {
+    float: left;
+}
+.header ul li a {
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+}
+.header ul li a:hover {
+    background-color: rgb(70, 70, 70);
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+.main .left {
+    width: 20%;
+    float: left;
+}
+.left .admin-info {
+    padding: 5px;
+    text-align: center;
+    color: #ddd;
+}
+.left .admin-info img {
+    border-radius: 100px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+}
+.left .list-title {
+    display: block;
+    line-height: 36px;
+    width: 100%;
+    background: #32464e;
+    text-indent: 10px;
+    color: #ddd;
+}
+.left .list-title span {
+    transition: all .2s;
+    border-top: 10px solid #ddd;
+    border-left: 6px solid rgba(0,0,0,0);
+    border-right: 6px solid rgba(0,0,0,0);
+    border-bottom: 10px solid rgba(0,0,0,0);
+    position: relative;
+    top: 5px;
+    right: 10px;
+    float: right;
+    transform: rotate(90deg);
+}
+.left .bar-list {
+    display: none;
+}
+.left .bar-list a {
+    display: block;
+    color: #ddd;
+    padding: 5px 0;
+    background-color: #243035;
+    text-indent: 20px;
+    font-size: 15px;
+}
+.left .bar-list a:hover {
+    background-color: #202a2f;
+    color: #fff;
+}
+/* 右边 */
+.right {
+    float: right;
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #fff;
+}

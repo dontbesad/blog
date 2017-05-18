@@ -1,0 +1,49 @@
+/* 文章详情页 */
+.art {
+}
+.art .art-title {
+    text-align: center;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+.art .art-content img{
+    /**/
+}
+
+.art .art-info {
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+.art-info .fl ul li {
+    float: left;
+    padding: 0px 2px;
+    height: 20px;
+    line-height: 20px;
+}
+.art-info .fl ul li a:hover {
+    color: #000;
+}
+.art-info .fr a:hover {
+    color: #123;
+}
+/* 上一篇-下一篇 */
+.skip-adj-art {
+    overflow: hidden;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.skip-adj-art a {
+    color: #269;
+}
+.skip-adj-art a:hover {
+    color: #136;
+}
+
+@media screen and (max-width:600px) {
+    .art .art-content img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+.search {
+    text-align: center;
+}
+.search input[type='text'] {
+    border: 2px solid #c66;
+    width: 200px;
+    padding: 6px 10px;
+}
+.search input[type='submit'] {
+    margin-left: 20px;
+    padding: 6px 30px;
+    background: #c66;
+    color: #fff;
+    cursor: pointer;
+}
+.search input[type='submit']:hover {
+    background: #a55;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+        <meta charset="utf-8">
+        <title>Recoder Blog</title>
+        <link rel="stylesheet" href="__PUBLIC__/Css/index.css">
+        <link rel="stylesheet" href="__PUBLIC__/Css/returnTop.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1><a href="{:U('Home/Index/index')}">Recoder</a></h1>
+            <i>简约不简单</i>
+            <ul>
+                <li><a href="{:U('Home/Index/index')}">首 页</a></li>
+                <li><a href="{:U('Home/Index/aboutme')}">关 于 我</a></li>
+                <li><a href="{:U('Home/Index/search')}">搜索</a></li>
+                <li>
+                    <present name="Think.cookie.username">
+                            <a href="">{$Think.cookie.username}</a>
+                            <ul>
+                                <li><a href="{:U('Home/User/Personal')}">编辑</a></li>
+                                <li><a href="{:U('Admin/Index/index')}">管理员页面</a></li>
+                                <li><a href="{:U('Home/User/logout')}">logout</a></li>
+                            </ul>
+                    <else />
+                        <a href="{:U('Home/User/login')}">登录</a>
+                    </present>
+                </li>
+            </ul>
+        </div>
+        <div class="br"></div>
+        <div class="main">
+            <div class="left-area">

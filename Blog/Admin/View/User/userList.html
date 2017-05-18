@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>用户列表</title>
+        <link rel="stylesheet" href="__PUBLIC__/Css/Admin/table.css">
+        <style media="screen">
+        .add-user {
+            border: 0;
+            background-color: #69d;
+            padding: 8px 25px;
+            color: #fff;
+            border-radius: 5px;
+            letter-spacing: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .add-user:hover {
+            background-color: #359;
+        }
+        </style>
+    </head>
+    <body>
+        <a href="__URL__/userAdd" class="add-user">添加用户</a>
+        <table cellspacing="0">
+            <caption><h2>用户列表</h2></caption>
+            <tr>
+                <td>用户名</td>
+                <td>邮箱</td>
+                <td>注册时间</td>
+                <td>权限</td>
+                <td>操作</td>
+            </tr>
+            <volist name="user_list" id="user">
+                <tr>
+                    <td>{$user.username}</td>
+                    <td>{$user.email}</td>
+                    <td>{$user.reg_time}</td>
+                    <td>
+                        <empty name="user['auth_group']">
+                            普通用户
+                        <else />
+                            <volist name="user['auth_group']" id="auth">
+                                {$auth["title"]} /
+                            </volist>
+                        </empty>
+                    </td>
+                    <td><a href="__URL__/userEdit/user_id/{$user.user_id}">修改</a> / <a href="javascript:;" onclick="ajaxDel({$user.user_id})">删除</a></td>
+                </tr>
+            </volist>
+        </table>
+    </body>
+</html>
+<script type="text/javascript">
+function ajaxDel(user_id) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "__URL__/userDelAction", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send("user_id=" + user_id);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)) {
+            var response = JSON.parse(xhr.responseText);
+            alert(response.message);
+            if (response.flag) {
+                location.reload();
+            }
+        }
+    }
+}
+</script>

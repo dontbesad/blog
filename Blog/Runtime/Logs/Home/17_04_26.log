@@ -1,0 +1,30 @@
+[ 2017-04-26T10:20:45+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/article
+ERR: syntax error, unexpected ';'
+
+[ 2017-04-26T11:49:50+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/article/artid/4
+ERR: syntax error, unexpected '"]); ?>' (T_CONSTANT_ENCAPSED_STRING)
+
+[ 2017-04-26T11:49:50+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/article/artid/4
+ERR: syntax error, unexpected '"]); ?>' (T_CONSTANT_ENCAPSED_STRING)
+
+[ 2017-04-26T11:49:50+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/article/artid/4
+ERR: syntax error, unexpected '"]); ?>' (T_CONSTANT_ENCAPSED_STRING)
+
+[ 2017-04-26T13:23:16+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/article/artid/4
+ERR: Think\Model:filed方法不存在！
+
+[ 2017-04-26T15:49:04+08:00 ] 127.0.0.1 /blog/index.php/Home/Index
+ERR: Call to undefined function htmlspecialchars_encode()
+
+[ 2017-04-26T16:15:46+08:00 ] 127.0.0.1 /blog/index.php/Home/I
+ERR: 无法加载控制器:I
+
+[ 2017-04-26T16:17:21+08:00 ] 127.0.0.1 /blog/index.php/Home/ar
+ERR: 无法加载控制器:Ar
+
+[ 2017-04-26T16:20:12+08:00 ] 127.0.0.1 /blog/index.php/Home/search
+ERR: 无法加载控制器:Search
+
+[ 2017-04-26T19:06:52+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: 模板不存在:./Blog/Home/View/Index/category.html
+

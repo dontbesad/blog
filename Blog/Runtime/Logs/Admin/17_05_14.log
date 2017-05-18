@@ -1,0 +1,30 @@
+[ 2017-05-14T00:00:48+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userEditAction
+ERR: 1048:Column 'password' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `username`='test',`password`=NULL,`email`='123123@qq.com' WHERE `user_id` = 6
+
+[ 2017-05-14T00:06:35+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userEditAction
+ERR: 1048:Column 'password' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `username`='test',`password`=NULL,`email`='123123@qq.com' WHERE `user_id` = 6
+
+[ 2017-05-14T00:07:03+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userEditAction
+ERR: 1048:Column 'password' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `username`='test',`password`=NULL,`email`='123123@qq.com' WHERE `user_id` = 6
+
+[ 2017-05-14T00:07:03+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userEditAction
+ERR: 1048:Column 'password' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `username`='test',`password`=NULL,`email`='123123@qq.com' WHERE `user_id` = 6
+
+[ 2017-05-14T00:07:03+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userEditAction
+ERR: 1048:Column 'password' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `username`='test',`password`=NULL,`email`='123123@qq.com' WHERE `user_id` = 6
+
+[ 2017-05-14T00:38:58+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userEditAction
+ERR: 1048:Column 'password' cannot be null
+ [ SQL语句 ] : UPDATE `user` SET `username`='test',`password`=NULL,`email`='123123@qq.com' WHERE `user_id` = 6
+
+[ 2017-05-14T19:53:26+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userAuth
+ERR: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')'
+
+[ 2017-05-14T19:53:26+08:00 ] 127.0.0.1 /blog/index.php/Admin/User/userAuth
+ERR: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')'
+

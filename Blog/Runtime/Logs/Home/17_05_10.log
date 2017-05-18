@@ -1,0 +1,59 @@
+[ 2017-05-10T15:00:11+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: syntax error, unexpected ')'
+
+[ 2017-05-10T16:06:19+08:00 ] 127.0.0.1 /blog/index.php/Home/Index
+ERR: 1054:Unknown column 'pubtime' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `article` ORDER BY pubtime desc LIMIT 0,8  
+
+[ 2017-05-10T20:02:26+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: Call to a member function fetchSql() on array
+
+[ 2017-05-10T20:02:32+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: Call to a member function fetchSql() on array
+
+[ 2017-05-10T20:06:07+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: 1054:Unknown column 'article' in 'field list'
+ [ SQL语句 ] : SELECT `article` FROM `category` LIMIT 1,2  
+
+[ 2017-05-10T20:06:08+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: 1054:Unknown column 'article' in 'field list'
+ [ SQL语句 ] : SELECT `article` FROM `category` LIMIT 1,2  
+
+[ 2017-05-10T20:06:59+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: 1054:Unknown column 'article.art_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `category` WHERE ( article.art_id < 2 ) 
+
+[ 2017-05-10T20:07:03+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: 1054:Unknown column 'article.art_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `category` WHERE ( article.art_id < 2 ) 
+
+[ 2017-05-10T20:10:51+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/test
+ERR: 1054:Unknown column 'art_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `category` WHERE ( art_id < 10 ) 
+
+[ 2017-05-10T20:25:18+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: Call to a member function relation() on null
+
+[ 2017-05-10T20:26:03+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: Think\Model:relation方法不存在！
+
+[ 2017-05-10T20:30:52+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: 表达式错误:in ( SELECT `art_id` FROM `art_cate` WHERE `cate_id` = 1 LIMIT 0,2   )
+
+[ 2017-05-10T20:34:15+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: syntax error, unexpected ')'
+
+[ 2017-05-10T20:34:21+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: 1235:This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( art_id in ( SELECT `art_id` FROM `art_cate` WHERE `cate_id` = 1 LIMIT 0,2   ) ) 
+
+[ 2017-05-10T20:36:52+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: Think\Model:build方法不存在！
+
+[ 2017-05-10T20:38:01+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1
+ERR: 1235:This version of MySQL doesn't yet support 'LIMIT & IN/ALL/ANY/SOME subquery'
+ [ SQL语句 ] : SELECT * FROM `article` WHERE ( art_id in ( SELECT `art_id` FROM `art_cate` WHERE `cate_id` = 1 LIMIT 0,2   ) ) 
+
+[ 2017-05-10T20:41:55+08:00 ] 127.0.0.1 /blog/index.php/Home/Index/category/cateid/1/p/2.html
+ERR: syntax error, unexpected '$art_list' (T_VARIABLE)
+

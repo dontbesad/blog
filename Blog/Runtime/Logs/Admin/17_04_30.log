@@ -1,0 +1,47 @@
+[ 2017-04-30T00:00:31+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:00:39+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:01:23+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:01:43+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:05:37+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:07:34+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:17:49+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:18:37+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:20:31+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:20:39+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: 1364:Field 'art_id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `art_cate` (`cate_id`) VALUES ('2')
+
+[ 2017-04-30T00:43:27+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/addTag
+ERR: 1062:Duplicate entry 'java' for key 'tag_name'
+ [ SQL语句 ] : INSERT INTO `tag` (`tag_name`) VALUES ('java')
+
+[ 2017-04-30T14:46:00+08:00 ] 127.0.0.1 /blog/index.php/Admin/
+ERR: syntax error, unexpected ';', expecting ')'
+

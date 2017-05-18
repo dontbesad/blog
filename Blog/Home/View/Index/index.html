@@ -1,0 +1,17 @@
+<!-- 主页 -->
+<div>
+    <volist name="art_list" id="art">
+        <div class="article-list">
+            <h2><a href="__URL__/article/artid/{$art.art_id}">{$art.title}</a></h2>
+            <h4>由<a href="#">{$art['user'].username}</a>发表于 {$art.pub_time}</h4>
+            <p class="preview-art">{$art.short_content}
+                <a href="__URL__/article/artid/{$art.art_id}">阅读全文</a>
+            </p>
+        </div>
+    </volist>
+    <br>
+    <!-- 分页链接 -->
+    <div class="div-page">
+        {$div_page}
+    </div>
+</div>

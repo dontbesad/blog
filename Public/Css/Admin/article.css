@@ -1,0 +1,48 @@
+/* 后台添加文章的样式 */
+body {
+    padding: 0; margin: 0;
+}
+html {
+    font-family:Arial,Verdana,Sans-serif;
+}
+input {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+.add-art .art-title {
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.add-art .add-art-btn {
+    height: 40px;
+    width: 100px;
+    background: #273;
+    color: #fff;
+    cursor: pointer;
+}
+.add-art .add-art-btn:hover {
+    background: rgb(203, 120, 68);
+    padding: 0 10px;
+}
+.add-tag input {
+    padding: 2px 8px;
+    font-size: 12px;
+}
+.add-tag input[type='submit'] {
+    background-color: #981;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+input[type='checkbox'] {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#message_art,#message_tag {
+    color: rgb(172, 26, 26);
+}

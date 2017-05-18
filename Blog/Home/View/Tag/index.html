@@ -1,0 +1,31 @@
+<style media="screen">
+.tag-name {
+    background-image: url(__PUBLIC__/Images/Icons/tag.png);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    background-size: 30px 30px;
+    text-indent: 40px;
+    color: #2F4F4F;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+    background-color: #ccf;
+    border-radius: 10px;
+}
+</style>
+<div class="">
+    <div class="tag-name">
+        <h2>{$tag_name}</h2>
+    </div>
+    <volist name="art_list" id="art">
+        <div class="article-list">
+            <h2><a href="{:U('Home/Index/article')}?artid={$art.art_id}">{$art.title}</a></h2>
+            <h4>由<a href="#">{$art.username}</a>发表于 {$art.pub_time}</h4>
+            <p class="preview-art">{$art.short_content}
+                <a href="{:U('Home/Index/article')}?artid={$art.art_id}">阅读全文</a>
+            </p>
+        </div>
+    </volist>
+    <div class="div-page">
+        {$div_page}
+    </div>
+</div>

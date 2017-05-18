@@ -1,0 +1,14 @@
+[ 2017-04-26T20:36:12+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/editArt
+ERR: syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-04-26T20:36:13+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/listArt
+ERR: syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+
+[ 2017-04-26T20:37:37+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/listArt
+ERR: 1146:Table 'blog.artcile' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `artcile`
+
+[ 2017-04-26T20:37:46+08:00 ] 127.0.0.1 /blog/index.php/Admin/Index/listArt
+ERR: 1054:Unknown column 'pubtime' in 'field list'
+ [ SQL语句 ] : SELECT `art_id`,`title`,`pubtime` FROM `article` 
+
