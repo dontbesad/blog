@@ -2,9 +2,9 @@
 
 
 ## blog演示链接
-> [前台链接](http://120.25.162.49/blog)
+> [前台链接](http://120.77.241.49/blog)
 
-> [后台链接](http://120.25.162.49/blog/index.php/Admin)
+> [后台链接](http://120.77.241.49/blog/index.php/Admin)
 
 > + 后台账号: testadmin
 > + 后台密码: adminadmin
